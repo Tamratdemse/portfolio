@@ -60,3 +60,11 @@ gsap.utils.toArray(".experience-item").forEach((item) => {
     },
   });
 });
+
+// Hamburger Menu Toggle
+const menuToggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+menuToggle.addEventListener("click", () => {
+  menu.classList.toggle("hidden");
+});

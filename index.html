@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tamrat Demse - Full Stack Developer</title>
+    <title>Tamrat Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -37,8 +37,44 @@
     <header
       class="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 backdrop-blur-sm shadow-md"
     >
-      <nav class="container mx-auto px-6 py-4">
-        <ul class="flex justify-center space-x-8">
+      <nav
+        class="container mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <div class="flex items-center space-x-2 text-xl font-bold">
+          <img
+            src="./image/2.png"
+            alt="Tamrat Demse"
+            class="rounded-full w-10 h-10 object-cover"
+          />
+          <span class="text-gray-800">Tamrat</span>
+        </div>
+        <!-- Hamburger Menu -->
+        <div class="md:hidden">
+          <button
+            id="menu-toggle"
+            class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-600"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- Navigation Links -->
+        <ul
+          id="menu"
+          class="hidden md:flex md:justify-center md:space-x-8 md:items-center"
+        >
           <li>
             <a href="#intro" class="hover:text-blue-400 transition-colors"
               >Home</a
@@ -92,8 +128,8 @@
           <div class="md:w-1/2 mt-8 md:mt-0">
             <img
               src="./image/IMG_0300.JPG"
-              alt="John Doe"
-              class="rounded-full w-64 h-65 object-cover mx-auto"
+              alt="tamrat demse"
+              class="rounded-full w-64 h-64 object-cover mx-auto"
             />
           </div>
         </div>
