@@ -39,6 +39,10 @@
 
       @media (max-width: 768px) {
         .project-item,
+        .innerContainer {
+          margin: 0 auto !important; /* Forces auto margin, ignoring ml-16 */
+        }
+
         .experience-item {
           padding: 0.75rem;
         }
@@ -117,7 +121,7 @@
     </header>
 
     <main class="container mx-4 px-6">
-      <div class="ml-16">
+      <div class="innerContainer ml-16">
         <section id="intro" class="min-h-screen flex items-center section-fade">
           <div
             class="flex flex-col md:flex-row items-center justify-between w-full"
